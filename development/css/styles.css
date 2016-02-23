@@ -1,0 +1,349 @@
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+
+
+
+
+
+
+.border {
+	border:1px solid white;
+}
+/* ----------ANIMATED LOGO---------------*/
+
+
+
+
+#AHlogo {
+	position:fixed;
+	z-index: 2000;
+}
+
+#AHlogopath {
+
+	float:left;
+	left:0;
+	height:128px;
+	padding-left:3vw;
+	padding-top:10px;
+	fill-opacity:0; 
+	-webkit-column-rule: #c26c10;
+	-moz-column-rule: #c26c10;
+	-o-column-rule: #c26c10;
+	column-rule: #c26c10;
+	stroke:#c26c10; 
+	stroke-width:16;
+	stroke-dasharray:10000px;
+	stroke-dashoffset:10000px;
+	animation-name: draw;
+    animation-duration: 2s;
+    animation-fill-mode: forwards; 
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+#AHlogofill {
+	animation-name:fill;
+	animation-delay:1.5s;
+	animation-duration:1s;
+	animation-fill-mode: forwards; 
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@keyframes fill {
+	to{
+		fill:#c26c10;
+		fill-opacity:1;
+	}
+}
+
+
+
+
+
+/* ----------HEADER & FOOTER---------------*/
+
+#menu{
+	
+	width: 100%;
+}
+
+.fp-viewing-firstPage-0 #layouticon,
+.fp-viewing-firstPage-1 #brandingicon,
+.fp-viewing-firstPage-2 #templatesicon,
+.fp-viewing-firstPage-3 #websitesicon,
+.fp-viewing-firstPage-4 #scriptingicon {
+	fill:white;
+}
+
+
+.fp-viewing-firstPage-0 #layoutbutton > a,
+.fp-viewing-firstPage-1 #brandingbutton > a,
+.fp-viewing-firstPage-2 #templatesbutton > a,
+.fp-viewing-firstPage-3 #websitesbutton > a,
+.fp-viewing-firstPage-4 #scriptingbutton > a,
+.fp-viewing-secondPage-0 #aboutbutton > a,
+.fp-viewing-secondPage-1 #resumebutton > a,
+.fp-viewing-secondPage-2 #contactbutton > a{
+    color:white;
+}
+
+
+a:link, a:visited  {
+	color:#c26c10;
+}
+
+a:hover {
+	color:#dc7b13;
+}
+
+a:active, a:focus, {
+	color:white;
+}
+
+
+li:not(:last-child) {
+	border-right:#353535 1px solid;
+}
+
+.icon {
+	height:22px;
+	fill:#c26c10;
+	vertical-align: top;
+	padding:0 2px 2px 0;
+	float:left;
+	
+}
+
+.white {
+	fill:white;
+	color: white;
+}
+
+#header{
+	position:fixed;
+	top:0;
+	z-index: 70;
+	width: 100%;
+	text-align:center;
+	display:block;
+	background-color:black;
+	height:85px;
+	padding-top:25px;
+	padding-bottom:100px;
+	background-clip:content-box;
+}
+
+#header li {
+	margin:auto 0;
+	display:inline-block;
+	font-size:18px;
+	margin: 43px .25vw .5vw 0;
+	padding-right:1vw;
+
+
+}
+
+
+#footer{
+	text-align:center;
+	display:inline-block;
+	position:fixed;
+	bottom:0;
+	padding-bottom:20px;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	background-color:black;
+	background-clip:content-box;
+	clear:both;
+}
+
+
+#footer li {
+	display:inline-block;
+	font-size:16px;
+	margin:auto 0;
+	padding: 0 3vw 0 3vw;
+}
+	
+#namedesc {
+	right:0;
+	color:white;
+	position:fixed;
+	text-align: right;
+	padding: 44px 28px 0 0;
+	font-family: 'Lora', serif;
+	font-size: 15px;
+	line-height: 23px;
+	z-index: 1000;
+}
+
+/* ----------CONTENT---------------*/
+
+
+
+#owl-car {
+	width:80%;
+	padding-top: 5%;
+	position:relative;
+
+	
+
+}
+
+#owl-car .item img{
+    display: block;
+    height: auto;
+    width:60%;
+  	margin:0 auto;
+}
+
+#owl-car2 {
+	width:80%;
+	padding-top: 5%;
+	position:relative;
+	
+	
+
+}
+
+#owl-car2 .item img{
+    display: block;
+    height: auto;
+    width:60%;
+  	margin:0 auto;
+}
+
+#hiwbcontent {
+	fill:white;
+	display: block;
+    height: auto;
+    width:60%;
+  	margin:0 auto;
+}
+
+.textpane{
+	position:absolute;
+	height: auto;
+	right: 15%;
+	width:20%;
+	bottom:25%;	
+}
+
+h1{
+	font-size: 1.3em;
+	font-family: "Lato";
+	font-weight: 700;
+	color:#c26c10;
+}
+
+p{
+	font-family: "Sanchez";
+	font-size: .7em;
+	text-align: center;
+	color:white;
+	vertical-align: 0;
+	font-weight: 400;
+}
+
+
+
+
+/*-----------COMMON FORMATTING ELEMENTS----------------*/
+
+
+html{
+	background: -webkit-gradient(linear, top left, bottom left, from(#353535), to(#1D1D1D));
+	background: -webkit-linear-gradient(#353535, #1D1D1D);
+	background: linear-gradient(#353535,#1D1D1D);
+	height:100%;
+	width:100%;
+
+	}
+
+body{
+
+	font-family: 'Lato', sans-serif;
+	font-size: 1.7vw;
+	
+}
+
+
+
+.section{
+	text-align: center;
+	position: relative;
+	
+}
+
+
+.bold{
+	font-family: "Sanchez";
+	font-weight: 400;
+	font-size: 1.1em;
+}
+
+.italic{
+	font-family: "Sanchez";
+	font-style: italic;
+	font-weight: 400;
+	letter-spacing: .9px;
+	font-size: 1.1em;
+}
+
+.slide{
+	position:relative;
+}
