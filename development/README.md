@@ -1,1 +1,0 @@
-# squirpy.github.io
