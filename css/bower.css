@@ -296,7 +296,7 @@ html.fp-enabled,
 /* Styling Next and Prev buttons */
 
 .owl-theme .owl-controls .owl-buttons div{
-	color: #FFF;
+	color:white;
 	display: inline-block;
 	zoom: 1;
 	*display: inline;/*IE7 life-saver */

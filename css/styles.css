@@ -54,6 +54,62 @@ abbr,acronym { border: 0;
 .border {
 	border:1px solid white;
 }
+@CHARSET "ISO-8859-1";
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+	text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+	font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border: 0;
+}
+
+
+
+
+
+
+
+
+.border {
+	border:1px solid white;
+}
 /* ----------ANIMATED LOGO---------------*/
 
 
@@ -109,14 +165,15 @@ abbr,acronym { border: 0;
 	}
 }
 
-
-
+/*
+* {
+	border: 1px solid white;
+}*/
 
 
 /* ----------HEADER & FOOTER---------------*/
 
 #menu{
-	
 	width: 100%;
 }
 
@@ -163,7 +220,7 @@ li:not(:last-child) {
 	fill:#c26c10;
 	vertical-align: top;
 	padding:0 2px 2px 0;
-	float:left;
+	
 	
 }
 
@@ -177,8 +234,8 @@ li:not(:last-child) {
 	top:0;
 	z-index: 70;
 	width: 100%;
-	text-align:center;
-	display:block;
+	justify-content: center;
+	display:flex;
 	background-color:black;
 	height:85px;
 	padding-top:25px;
@@ -188,18 +245,18 @@ li:not(:last-child) {
 
 #header li {
 	margin:auto 0;
-	display:inline-block;
+	display:inline-flex;
 	font-size:18px;
-	margin: 43px .25vw .5vw 0;
-	padding-right:1vw;
+	margin: 43px 0 1.5vw 0;
+	padding: 0 1vw 0 1vw;
 
 
 }
 
 
 #footer{
-	text-align:center;
-	display:inline-block;
+	justify-content: center;
+	display:flex;
 	position:fixed;
 	bottom:0;
 	padding-bottom:20px;
@@ -213,7 +270,7 @@ li:not(:last-child) {
 
 
 #footer li {
-	display:inline-block;
+	display:inline-flex;
 	font-size:16px;
 	margin:auto 0;
 	padding: 0 3vw 0 3vw;
@@ -224,7 +281,7 @@ li:not(:last-child) {
 	color:white;
 	position:fixed;
 	text-align: right;
-	padding: 44px 28px 0 0;
+	padding: 44px 3vw 0 0;
 	font-family: 'Lora', serif;
 	font-size: 15px;
 	line-height: 23px;
@@ -235,37 +292,27 @@ li:not(:last-child) {
 
 
 
-#owl-car {
+#owl-car, #owl-car2, #owl-car3  {
 	width:80%;
 	padding-top: 5%;
 	position:relative;
-
-	
-
 }
 
-#owl-car .item img{
+
+.item img {
     display: block;
     height: auto;
     width:60%;
   	margin:0 auto;
 }
 
-#owl-car2 {
-	width:80%;
-	padding-top: 5%;
-	position:relative;
-	
-	
 
+
+#lemmycontent {
+	height:40vw;
+	width:auto;
 }
 
-#owl-car2 .item img{
-    display: block;
-    height: auto;
-    width:60%;
-  	margin:0 auto;
-}
 
 #hiwbcontent {
 	fill:white;

@@ -69,6 +69,15 @@ $(document).ready(function() {
 				            singleItem:true,
 				    		transitionStyle:"goDown"
 				          });
+
+	        			$("#owl-car3").owlCarousel({
+
+				            navigation : false,
+				            slideSpeed : 300,
+				            paginationSpeed : 400,
+				            singleItem:true,
+				    		transitionStyle:"goDown"
+				          });
 						console.log("afterRender");
 	        		},
 	        		afterResize: function(){
